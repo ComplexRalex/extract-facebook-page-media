@@ -130,12 +130,12 @@ py download_media.py --input_filename <input_filename> --output_directory <outpu
 
 Pretty neat, right?
 
-# Limits
+## Limits
 
 * Only "regular" posts and profile pictures are retrived from `get_facebook_posts_csv.py`. I couldn't find a way to retrieve posts with `"timeline_visibility": "no timeline unit for this post"`.
 * Some photos extracted from `get_facebook_posts_media_csv.py` are going to be repeated due to simplifications over album retrieval in the code.
 
-# Notes
+## Notes
 
 The result will contain posts ordered by its UNIX timestamp ascendingly.
 
