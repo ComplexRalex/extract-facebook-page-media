@@ -162,10 +162,10 @@ def main():
         save_path = os.path.join(output_directory, filename)
 
         if download_file(attachment_media_url, save_path):
-            print(f"[{post_id}][{index}/{len(dataframe)}] Media {attachment_id} downloaded correctly: " + filename)
+            print(f"[{post_id}][{index + 1}/{len(dataframe)}] Media {attachment_id} downloaded correctly: " + filename)
             successful_downloads += 1
         else:
-            print(f"[{post_id}][{index}/{len(dataframe)}] Couldn't download {attachment_id}...")
+            print(f"[{post_id}][{index + 1}/{len(dataframe)}] Couldn't download {attachment_id}...")
 
     print(f"Process finished. (number of attached media files extracted: {successful_downloads}). Check out your files at {output_directory}!")
 
